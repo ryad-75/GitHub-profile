@@ -3,31 +3,27 @@
     min-height: 100vh;
 }
 
-.github__image {
-}
-.filter__content svg {
-    padding-left: 42%;
-    margin: auto;
-    width: 60%;
-}
 .filter__content {
-    padding-top: 15%;
+    padding-top: 10%;
 }
 #myForm {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+.form-group{
+    margin: 0 auto;
+    width: 500px;
 }
 
 #myForm label {
     font-family: $font-family-base;
-    padding-left: 27%;
     line-height: 5rem;
-    font-size: $very-large-font-size;
-    color: cadetblue;;
+    font-size: 25px;
+    color: cadetblue;
 }
-
-#myForm input {
-    margin-left: 15%;
+.title-page{
+    text-align: center;
 }
 
 #username {
@@ -46,30 +42,44 @@
     font-weight: 400;
     text-align: center;
 }
+.text-description{
+    font-family: "Poppins", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: cadetblue;
+    margin-top: 4em;
+    padding: 5px;
+}
 
 @media only screen and (max-width: 800px) {
     #myForm label {
         font-family: $font-family-base;
-        padding-left: 30%;
         line-height: 5rem;
         font-size: $large-font-size;
         color: #ffffff;
     }
-
-    #myForm input {
-        margin-left: 4%;
+    .form-group{
+        width: 350px;
+    }
+    .text-description {
+        padding: 15px;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    #myForm label {
-        padding-left: 18%;
-    }
     .filter__content {
-        padding-top: 40%;
+        padding-top: 20%;
     }
-    #myForm input {
-        margin-left: 5%;
-        max-width: 90%;
+    #myForm label {
+        font-size: 18px;
+    }
+    .form-group{
+        width: 300px;
+    }
+    .text-description{
+        padding: 25px;
+    }
+    img {
+        height: 120px;
     }
 }

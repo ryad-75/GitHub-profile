@@ -20,9 +20,13 @@ const FilterProfile = props => {
                 </div>
                     <div id="myForm">
                         <div className="form-group">
+                            <div className="title-page">
                             <label htmlFor="username">
                                 Afficher votre profil Github
                             </label>
+                            </div>
+                            
+                            <div>
                             <input
                                 type="text"
                                 className="form-control profile__input"
@@ -33,6 +37,12 @@ const FilterProfile = props => {
                                 id="username"
                                 required
                             />
+                            </div> 
+                            
+                        </div>
+                        <div className="text-description">
+                                <p>Un look revisité de votre profil GitHub</p>
+                                <p>Il montre vos principaux référentiels et une visualisation de vos languages les plus utilisées ainsi que les référentiels étoilés</p>
                         </div>
                     </div>
                 </div>
